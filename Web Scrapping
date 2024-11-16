@@ -1,0 +1,15 @@
+## Library
+! pip install google-play-scraper
+from google_play_scraper import app
+import pandas as pd
+import numpy as np
+
+## Web Scrapping
+from google_play_scraper import Sort, reviews_all
+myindihome_rvs=reviews_all(
+    'com.telkom.indihome.external',
+    sleep_milliseconds=0,
+    lang='id',
+    country='id',
+    sort=Sort.NEWEST,
+)
